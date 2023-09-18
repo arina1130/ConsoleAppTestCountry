@@ -1,0 +1,50 @@
+﻿@model List<Country>
+
+<div class="text-center">
+    <div class="d-inline-block form-floating pb-1 my-3 w-75 ">
+        <input type="text" class="px-4 form-control rounded-pill shadow" id="filter" placeholder="Поиск">
+        <label for="filter" class="px-4">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </span>Find the country or capital...
+        </label>
+    </div>
+    <table class="table table-hover w-75 text-start mx-auto">
+        <thead>
+            <tr>
+                <th scope="col">Country</th>
+                <th scope="col">Capital</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Country c in Model)
+            {
+                <tr data-href="/Home/Details">
+                    <td id="name">@c.Name.Official</td>
+                    @{
+                        string cap = c.Capital.Count != 0 ? c.Capital[0] : "-";
+                    }
+                    <td>@cap</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script>
+    (function ($) {
+        $("#filter").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $(".table tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1); //Для страны и столицы (мне кажется, так интереснее)))
+               // $(this).toggle($(this).find("#name").text().toLowerCase().indexOf(value) > -1); //Только для названия страны
+            });
+        });
+    }(jQuery));
+    $(document).ready(function ($) {
+        $('*[data-href]').on('click', function () {
+            window.location = $(this).data("href") + "?name=" + $(this).find('#name').text();
+        });
+    });
+</script>

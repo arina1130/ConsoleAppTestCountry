@@ -1,0 +1,14 @@
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\bin\Debug\net6.0\ConsoleAppTest.exe
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\bin\Debug\net6.0\ConsoleAppTest.deps.json
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\bin\Debug\net6.0\ConsoleAppTest.runtimeconfig.json
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\bin\Debug\net6.0\ConsoleAppTest.dll
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\bin\Debug\net6.0\ConsoleAppTest.pdb
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\obj\Debug\net6.0\ConsoleAppTest.GeneratedMSBuildEditorConfig.editorconfig
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\obj\Debug\net6.0\ConsoleAppTest.AssemblyInfoInputs.cache
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\obj\Debug\net6.0\ConsoleAppTest.AssemblyInfo.cs
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\obj\Debug\net6.0\ConsoleAppTest.csproj.CoreCompileInputs.cache
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\obj\Debug\net6.0\ConsoleAppTest.dll
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\obj\Debug\net6.0\refint\ConsoleAppTest.dll
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\obj\Debug\net6.0\ConsoleAppTest.pdb
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\obj\Debug\net6.0\ConsoleAppTest.genruntimeconfig.cache
+P:\Тестовые задания\ConsoleAppTest\ConsoleAppTest\obj\Debug\net6.0\ref\ConsoleAppTest.dll

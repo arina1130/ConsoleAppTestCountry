@@ -1,0 +1,35 @@
+﻿@model Country
+
+<h2>@Model.Name.Official</h2>
+<div>
+    <table class="table table-hover w-auto text-start ">
+        <thead>
+            <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Official name</td>
+                <td>@Model.Name.Official</td>
+            </tr>
+            <tr>
+                <td>Common name</td>
+                <td>@Model.Name.Common</td>
+            </tr>
+            <tr>
+                <td>Capital</td>
+                <td>@string.Join(", ", Model.Capital)</td>
+            </tr>
+            <tr>
+                <td>Region</td>
+                <td>@Model.Region</td>
+            </tr>
+            <tr>
+                <td>Languages</td>
+                <td>@String.Join(", ", Model.Languages.Select(a =>$"{a.Value} ({a.Key})" ))</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
